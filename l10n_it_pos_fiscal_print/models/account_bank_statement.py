@@ -1,4 +1,4 @@
-from openerp.osv import orm, fields
+from odoo import orm, fields
 
 class account_journal(orm.Model):
 
