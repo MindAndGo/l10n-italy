@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+
+<odoo>
+	<record model="ir.ui.view" id="option_ip_printer_view">
+
+		<field name="name">option_ip_printer_view</field>
+		<field name="model">pos.config</field>
+		<field name="inherit_id" ref="point_of_sale.view_pos_config_form" />
+		<field name="priority" eval="50" />
+		<field name="arch" type="xml">
+			<field name="iface_print_via_proxy" position="after">
+				<field name="ip_printer" string="Adresse imprimante" />
+				<field name="ip_display" string="Adresse afficheur" />
+				
+			</field>
+
+		</field>
+	</record>
+</odoo>
